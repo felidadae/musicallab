@@ -40,9 +40,10 @@ function setAudioCardID {
 	# Here You should grep `aplay -l` for your audio card;
 	AUDIO_CARD_ID=$(aplay -l | grep "NAMEOFCARD" | perl -lne 'if ($_ =~ /card (.)/) {print $1;}')
 	if [[ $AUDIO_CARD_ID == "" ]]; then
-		AUDIO_CARD_ID=0
+		AUDIO_CARD_ID=2
 	fi
 }
+export BUFFER_SIZE=64
 function run_jackd {
 	if [[ $(pgrep jackd) == "" ]]; then
 		echo "Running jackd in background with buffer size $BUFFER_SIZE..."

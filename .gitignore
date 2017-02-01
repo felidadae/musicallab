@@ -22,3 +22,4 @@ android-sdk
 android-ndk
 external_tools_source_code/*
 !external_tools_source_code/*.sh
+Rosetus/*
