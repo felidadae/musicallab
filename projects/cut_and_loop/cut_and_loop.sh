@@ -1,3 +1,4 @@
+#!/bin/bash -e
 sam=../resources/simpleGuitarRecording.wav
 function installSubtools() {
 	sudo apt-get install mpg321

@@ -14,8 +14,6 @@ linkedLibraries/*
 _otherPeopleRepos/*
 
 RosetusSynth/*
-resources/FluidR3GM2-2.SF2
-resources/*.wav*
 android-app-fork
 pyevans/*
 android-sdk
@@ -23,3 +21,5 @@ android-ndk
 external_tools_source_code/*
 !external_tools_source_code/*.sh
 Rosetus/*
+
+*.swp

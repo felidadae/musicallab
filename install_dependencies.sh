@@ -1,8 +1,10 @@
-sudo apt-get install jackd2
+#!/bin/bash -e
 
-sudo apt install sox
+sudo apt-get install -y jackd2
+
+sudo apt-get install -y sox
 sudo gpasswd -a $USER audio
-sudo apt-get install fluidsynth
+sudo apt-get -y install fluidsynth
 sudo pip install mido
 
 INSTALL_CADENCE=0
